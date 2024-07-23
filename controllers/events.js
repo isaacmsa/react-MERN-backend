@@ -72,7 +72,7 @@ const actualizarEvento = async (req, res) => {
 
 const eliminarEvento = async (req, res) => {
   const eventId = req.params.id
-  const uid = req.uid
+  const uid = req.uidUser
 
   try {
     const event = await Event.findById(eventId)
